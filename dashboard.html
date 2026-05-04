@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller García | Sistema de Gestión Premium</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="bg-mesh"></div>
+    
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-section">
+                <div class="logo-icon">G</div>
+                <div class="logo-text">Taller<span>García</span></div>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i data-lucide="layout-dashboard"></i>
+                        <span>Panel General</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i data-lucide="car"></i>
+                        <span>Vehículos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i data-lucide="calendar"></i>
+                        <span>Citas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i data-lucide="users"></i>
+                        <span>Clientes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i data-lucide="package"></i>
+                        <span>Inventario</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i data-lucide="bar-chart-3"></i>
+                        <span>Reportes</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-footer">
+                <a href="#" class="nav-link">
+                    <i data-lucide="settings"></i>
+                    <span>Configuración</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <div class="welcome-text">
+                    <h1>¡Hola, Administrador!</h1>
+                    <p style="color: var(--text-dim)">Aquí está lo que está pasando en tu taller hoy.</p>
+                </div>
+                <div class="top-actions">
+                    <div class="user-info">
+                        <div class="avatar"></div>
+                        <span class="user-name">Victor García</span>
+                        <i data-lucide="chevron-down" style="width: 16px; color: var(--text-dim)"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- KPI Stats -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--primary);">
+                        <i data-lucide="wrench"></i>
+                    </div>
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Reparaciones Activas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(16, 185, 129, 0.1); color: var(--secondary);">
+                        <i data-lucide="calendar-check"></i>
+                    </div>
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">Citas para hoy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6;">
+                        <i data-lucide="check-circle"></i>
+                    </div>
+                    <div class="stat-value">45</div>
+                    <div class="stat-label">Servicios Completados (Mes)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <div class="stat-value">$1,250</div>
+                    <div class="stat-label">Ingresos del día</div>
+                </div>
+            </section>
+
+            <!-- Content Row -->
+            <div class="content-grid">
+                <!-- Active Services -->
+                <section class="card-panel">
+                    <div class="section-header">
+                        <h2>Servicios en Progreso</h2>
+                        <button class="btn-add">+ Nueva Orden</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Vehículo</th>
+                                <th>Cliente</th>
+                                <th>Servicio</th>
+                                <th>Estado</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Toyota Corolla</strong><br><span style="font-size: 0.8rem; color: var(--text-dim)">STG-452</span></td>
+                                <td>Juan Pérez</td>
+                                <td>Cambio de Aceite</td>
+                                <td><span class="status-badge status-repairing">En Proceso</span></td>
+                                <td><i data-lucide="more-horizontal"></i></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Honda Civic</strong><br><span style="font-size: 0.8rem; color: var(--text-dim)">BJK-991</span></td>
+                                <td>María López</td>
+                                <td>Frenos</td>
+                                <td><span class="status-badge status-ready">Listo</span></td>
+                                <td><i data-lucide="more-horizontal"></i></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ford F-150</strong><br><span style="font-size: 0.8rem; color: var(--text-dim)">ZXC-123</span></td>
+                                <td>Carlos Ruiz</td>
+                                <td>Suspensión</td>
+                                <td><span class="status-badge status-waiting">Pendiente</span></td>
+                                <td><i data-lucide="more-horizontal"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Activity Feed / Quick Tips -->
+                <section class="card-panel">
+                    <div class="section-header">
+                        <h2>Actividad Reciente</h2>
+                    </div>
+                    <div class="activity-list" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div class="activity-item" style="display: flex; gap: 12px;">
+                            <div style="width: 2px; background: var(--primary); margin: 4px 0;"></div>
+                            <div>
+                                <p style="font-size: 0.9rem;"><strong>Vehículo Listo:</strong> El BMW de Ana está listo para entrega.</p>
+                                <span style="font-size: 0.75rem; color: var(--text-dim)">Hace 10 min</span>
+                            </div>
+                        </div>
+                        <div class="activity-item" style="display: flex; gap: 12px;">
+                            <div style="width: 2px; background: var(--secondary); margin: 4px 0;"></div>
+                            <div>
+                                <p style="font-size: 0.9rem;"><strong>Nueva Cita:</strong> Roberto agendó para mañana 10:00 AM.</p>
+                                <span style="font-size: 0.75rem; color: var(--text-dim)">Hace 1 hora</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; background: var(--glass); padding: 1.5rem; border-radius: 16px; border: 1px solid var(--border)">
+                        <h4 style="margin-bottom: 0.5rem;"><i data-lucide="lightbulb" style="width: 16px; margin-right: 5px;"></i> Tip del Día</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-dim)">Recuerda revisar el stock de filtros de aceite cada lunes para evitar retrasos.</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
